@@ -1,16 +1,24 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
-import Home from './pages/Home';
+import SwitchAndRoutes from './layout/SwitchAndRoutes';
+
+const Wrapper = styled.div`
+  & > div:not(:first-child) {
+    width: var(--width-app);
+    margin: 0 auto;
+  }
+`;
 
 const Layout = () => {
   return (
-    <div>
+    <Wrapper>
       <Header />
       <Sidebar />
-      <Home />
-    </div>
+      <SwitchAndRoutes />
+    </Wrapper>
   );
 };
 
