@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Container>
-        <Text>React Testing Library Examples</Text>
+        <Text>Header Text</Text>
         <Navbar />
       </Container>
     </Wrapper>
