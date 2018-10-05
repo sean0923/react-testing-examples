@@ -27,6 +27,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "moxios": "^0.4.0",
     "react-testing-library": "^5.2.0"
   }
 }
