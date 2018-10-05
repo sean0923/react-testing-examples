@@ -8,6 +8,7 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   width: var(--width-app);
+  padding: 0 20px;
   margin: 0 auto;
 `;
 

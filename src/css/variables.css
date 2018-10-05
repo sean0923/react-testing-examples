@@ -50,6 +50,6 @@
   --color-success-green: #A5BD83;
   --color-error-red: #db6a4b;
 
-  --width-app: 1440px;
+  --width-app: calc(1024px + 20px + 20px);
   ;
 }
