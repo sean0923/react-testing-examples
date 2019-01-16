@@ -36,7 +36,8 @@ const StyledLink = styled(NavLink)`
 const Navbar = () => {
   return (
     <Wrapper>
-      {[objKeys.Home, objKeys.Form, objKeys.Async, objKeys.Redux, objKeys.Context].map(objKey => {
+      {/* {[objKeys.Home, objKeys.Form, objKeys.Async, objKeys.Redux, objKeys.Context].map(objKey => { */}
+      {[objKeys.Home, objKeys.Form, objKeys.Async, objKeys.Redux].map(objKey => {
         return (
           <StyledLink key={objKey} to={getLink({ objKey })} exact activeClassName="active">
             {getText({ objKey })}

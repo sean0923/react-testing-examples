@@ -27,7 +27,8 @@ const Header = () => {
   return (
     <Wrapper>
       <Container>
-        <Text>Header Text</Text>
+        {/* <Text>Header Text</Text> */}
+        <Text />
         <Navbar />
       </Container>
     </Wrapper>
