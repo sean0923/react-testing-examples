@@ -6,7 +6,7 @@ import SwitchAndRoutes from './layout/SwitchAndRoutes';
 
 const BodyWrapper = styled.div`
   width: var(--width-app);
-  padding: 20px;
+  padding: 16px 0;
   margin: 0 auto;
 `;
 
