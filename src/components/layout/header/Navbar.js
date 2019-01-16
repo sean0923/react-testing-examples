@@ -1,8 +1,15 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+// -----------------------------------------------------------------------------------------
+// ----------------------------------------- Data ------------------------------------------
+// -----------------------------------------------------------------------------------------
+import { objKeys, getLink, getText } from '../../data/dataRoutes';
+
+// -----------------------------------------------------------------------------------------
+// ---------------------------------- Styled Components ------------------------------------
+// -----------------------------------------------------------------------------------------
 const Wrapper = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -29,25 +36,13 @@ const StyledLink = styled(NavLink)`
 const Navbar = () => {
   return (
     <Wrapper>
-      <StyledLink to="/" exact activeClassName="active">
-        Home
-      </StyledLink>
-
-      <StyledLink to="async" exact activeClassName="active">
-        Async
-      </StyledLink>
-
-      <StyledLink to="/sub-routes" exact activeClassName="active">
-        Sub Routes
-      </StyledLink>
-
-      <StyledLink to="redux" exact activeClassName="active">
-        Redux
-      </StyledLink>
-
-      <StyledLink to="react-context" exact activeClassName="active">
-        React Context
-      </StyledLink>
+      {[objKeys.Home, objKeys.Form, objKeys.Async, objKeys.Redux, objKeys.Context].map(objKey => {
+        return (
+          <StyledLink key={objKey} to={getLink({ objKey })} exact activeClassName="active">
+            {getText({ objKey })}
+          </StyledLink>
+        );
+      })}
     </Wrapper>
   );
 };
