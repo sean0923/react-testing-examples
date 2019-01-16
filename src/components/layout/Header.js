@@ -4,14 +4,16 @@ import styled from 'styled-components';
 import Navbar from './header/Navbar';
 
 const Wrapper = styled.div`
+  display: grid;
+  align-items: center;
   background-color: var(--color-arsenic);
-  padding: 20px 0;
+  /* padding: 20px 0; */
   line-height: 1;
+  height: 60px;
 `;
 
 const Container = styled.div`
   width: var(--width-app);
-  padding: 0 20px;
   margin: 0 auto;
 
   display: flex;
@@ -21,14 +23,15 @@ const Container = styled.div`
 const Text = styled.h2`
   color: #fff;
   font-weight: normal;
+  display: grid;
+  align-items: center;
 `;
 
 const Header = () => {
   return (
     <Wrapper>
       <Container>
-        {/* <Text>Header Text</Text> */}
-        <Text />
+        <Text>Header Text</Text>
         <Navbar />
       </Container>
     </Wrapper>

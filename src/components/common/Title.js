@@ -4,14 +4,13 @@ import styled from 'styled-components';
 // -----------------------------------------------------------------------------------------
 // ---------------------------------- Styled Components ------------------------------------
 // -----------------------------------------------------------------------------------------
-const Wrapper = styled.button`
-  padding: 4px 20px;
-  cursor: pointer;
-  border-radius: 4px;
+const Wrapper = styled.h1`
+  font-size: 60px;
+  margin-bottom: 16px;
 `;
 
-const Button = ({ text, children, onClick }) => {
-  return <Wrapper onClick={onClick}>{text || children}</Wrapper>;
+const Title = ({ text }) => {
+  return <Wrapper>{text}</Wrapper>;
 };
 
-export default Button;
+export default Title;

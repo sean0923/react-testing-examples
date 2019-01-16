@@ -13,7 +13,7 @@ import { objKeys, getLink, getText } from '../../data/dataRoutes';
 const Wrapper = styled.div`
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   & > *:not(:last-child) {
     margin-right: 16px;
   }
@@ -27,8 +27,8 @@ const StyledLink = styled(NavLink)`
   display: block;
   text-decoration: none;
   color: rgba(255, 255, 255, .25);
+  padding: 16px 0;
   &:hover {
-    /* color: var(--color-medium-gray); */
     color: #fff;
   }
 `;

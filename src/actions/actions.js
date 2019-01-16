@@ -7,16 +7,14 @@ export const dummyAction = () => {
   };
 };
 
-export const increment = num => {
+export const increment = () => {
   return {
     type: types.INCREMENT,
-    payload: num++,
   };
 };
 
-export const decrement = num => {
+export const decrement = () => {
   return {
     type: types.INCREMENT,
-    payload: num--,
   };
 };

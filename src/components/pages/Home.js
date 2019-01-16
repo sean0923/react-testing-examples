@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // -----------------------------------------------------------------------------------------
 // ----------------------------------- Component Import ------------------------------------
 // -----------------------------------------------------------------------------------------
+import Title from '../common/Title';
 import Number from '../common/Number';
 import UpAndDownButtons from '../common/UpAndDownButtons';
 
@@ -25,10 +26,13 @@ class Home extends Component {
 
   render() {
     return (
-      <Wrapper>
-        <Number number={this.state.number} />
-        <UpAndDownButtons increment={this.increment} decrement={this.decrement} />
-      </Wrapper>
+      <React.Fragment>
+        <Title text="Local State Counter" />
+        <Wrapper>
+          <Number number={this.state.number} />
+          <UpAndDownButtons increment={this.increment} decrement={this.decrement} />
+        </Wrapper>
+      </React.Fragment>
     );
   }
 }
