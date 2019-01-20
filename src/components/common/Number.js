@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // -----------------------------------------------------------------------------------------
@@ -22,6 +23,10 @@ const Number = ({ number }) => {
       <H2 data-testid="number">{number}</H2>
     </Wrapper>
   );
+};
+
+Number.propTypes = {
+  number: PropTypes.number.isRequired,
 };
 
 export default Number;
