@@ -19,7 +19,7 @@ const H2 = styled.h2`font-size: 60px;`;
 const Number = ({ number }) => {
   return (
     <Wrapper>
-      <H2>{number}</H2>
+      <H2 data-testid="number">{number}</H2>
     </Wrapper>
   );
 };

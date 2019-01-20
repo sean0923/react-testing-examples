@@ -5,7 +5,7 @@ import styled from 'styled-components';
 // ---------------------------------- Styled Components ------------------------------------
 // -----------------------------------------------------------------------------------------
 const Wrapper = styled.h1`
-  font-size: 60px;
+  font-size: 48px;
   margin-bottom: 16px;
 `;
 

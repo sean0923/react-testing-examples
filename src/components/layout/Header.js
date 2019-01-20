@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Container>
-        <Text>Header Text</Text>
+        <Text>Testing Examples</Text>
         <Navbar />
       </Container>
     </Wrapper>
