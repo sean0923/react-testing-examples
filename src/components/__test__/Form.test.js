@@ -16,7 +16,7 @@ describe('Testing Form Page', () => {
     fireEvent.change(firstNameInputField, { target: { value: FirstName } });
     fireEvent.change(lastNameInputField, { target: { value: LastName } });
 
-    expect(firstNameInputField.getAttribute('value')).toEqual(FirstName);
-    expect(lastNameInputField.getAttribute('value')).toEqual(LastName);
+    expect(firstNameInputField.value).toEqual(FirstName);
+    expect(lastNameInputField.value).toEqual(LastName);
   });
 });
